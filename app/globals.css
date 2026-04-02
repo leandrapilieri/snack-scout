@@ -7,13 +7,12 @@
 }
 
 body {
-  @apply bg-background text-foreground antialiased;
-  background-image: radial-gradient(circle at top, #f2efe6 0%, #f8f6f1 38%);
+  @apply bg-[#F2F0EA] text-foreground antialiased;
   min-height: 100vh;
 }
 
 .container-pad {
-  @apply mx-auto w-full max-w-5xl px-4 pb-24 pt-6 md:px-6;
+  @apply mx-auto w-full max-w-[430px] px-4 pb-24 pt-4;
 }
 
 .chip {
@@ -25,5 +24,13 @@ body {
 }
 
 .soft-panel {
-  @apply rounded-3xl border border-stone-200/80 bg-white/90 p-5 shadow-sm;
+  @apply rounded-3xl border border-[#D9D8D2] bg-[#F7F6F2] p-5 shadow-sm;
+}
+
+.app-shell {
+  @apply mx-auto min-h-screen max-w-[430px] border-x border-[#d7d5cf] bg-[#F7F6F2];
+}
+
+.top-bar {
+  @apply sticky top-0 z-20 flex items-center justify-between border-b border-[#dddcd6] bg-[#F7F6F2]/95 px-4 py-3 backdrop-blur;
 }
