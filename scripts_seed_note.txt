@@ -1,0 +1,2 @@
+Use lib/data/products.ts for full 20-item in-app mock dataset.
+Supabase seed.sql includes representative starter rows for DB bootstrap.
