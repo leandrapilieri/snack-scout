@@ -78,7 +78,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
       </Card>
 
       <Card>
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-stone-400">Guardian's Note</h2>
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-stone-400">Guardian&apos;s Note</h2>
         <p className="mt-2 text-sm leading-7 text-stone-700">
           A thoughtfully crafted snack balancing texture and nutrition. Top reasons: {product.reasons.join(", ").toLowerCase()}.
         </p>
