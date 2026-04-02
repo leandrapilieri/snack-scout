@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export const Tabs = TabsPrimitive.Root;
 
 export const TabsList = ({ className, ...props }: TabsPrimitive.TabsListProps) => (
-  <TabsPrimitive.List className={cn("grid w-full grid-cols-3 rounded-xl bg-muted p-1", className)} {...props} />
+  <TabsPrimitive.List className={cn("grid w-full grid-cols-3 rounded-2xl border border-[#d7d4cb] bg-[#ECEAE2] p-1", className)} {...props} />
 );
 
 export const TabsTrigger = ({ className, ...props }: TabsPrimitive.TabsTriggerProps) => (

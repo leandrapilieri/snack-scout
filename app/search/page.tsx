@@ -21,7 +21,7 @@ export default function SearchPage() {
       <SectionHeading title="Search snacks" subtitle="Look up by brand, product name, or type." />
       <Input placeholder="Try: granola bars, yogurt tubes, crackers..." value={query} onChange={(e) => setQuery(e.target.value)} />
 
-      <div className="flex gap-2 overflow-x-auto pb-2">{categories.map((category) => <span key={category} className="chip shrink-0 capitalize">{category}</span>)}</div>
+      <div className="flex gap-2 overflow-x-auto pb-2">{categories.map((category) => <span key={category} className="chip shrink-0 border-[#d3d1c7] bg-[#F0EEE6] capitalize">{category}</span>)}</div>
 
       <div>
         <p className="mb-2 text-sm font-medium">Filters</p>
@@ -34,7 +34,7 @@ export default function SearchPage() {
       </section>
 
       <section>
-        <p className="mb-2 text-sm font-medium">Trending products</p>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-stone-400">Trending products</p>
         <div className="grid gap-3">{trendingProducts.map((snack) => <ProductCard key={snack.id} snack={snack} />)}</div>
       </section>
 
